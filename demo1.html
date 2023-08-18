@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial of a Number</title>
+</head>
+<style>
+	body
+	{
+		margin-left: 150px;
+	}
+	h2
+	{
+		text-align: center;
+		color: blue;
+		margin-right: 150px;
+	}
+	button
+	{
+		width: 170px;
+		height: 40px;
+		border-radius: 20px;
+		border-color: orange;
+		background-color: rgb(66,239,245);
+		cursor: pointer;
+		font-size: 20px;
+	}
+	button:hover
+	{
+		background-color: rgb(50,162,168);
+	}
+
+	#myNumber
+	{
+		width: 150px;
+		height: 30px;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding: 12px 20px;
+	}
+	#myNumber:hover
+	{
+		background-color: rgb(66,239,245);
+	}
+</style>
+<body>
+
+<h2>Finding factorial of a number</h2>
+<h4>Enter a number:</h4>
+<input type="number" id="myNumber" value="2">
+
+<p>Click the button to get the result</p>
+
+<button onclick="myFunction()"><i>Find Factorial</i></button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+  var i,fact=1;
+  for(i=1;i<=x;i++)
+  {
+    fact=fact*i;
+  }
+  document.getElementById("demo").innerHTML = fact;
+}
+</script>
+
+</body>
+</html>
